@@ -32,6 +32,9 @@ gem 'simple_form'
 # devise
 gem 'devise'
 
+# can can
+gem 'cancan'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
