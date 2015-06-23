@@ -38,6 +38,9 @@ gem 'cancan'
 # paperclip
 gem 'paperclip'
 
+# gotenv-rails
+gem 'dotenv-rails', groups: [:development]
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
