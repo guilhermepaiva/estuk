@@ -41,6 +41,10 @@ gem 'paperclip'
 # gotenv-rails
 gem 'dotenv-rails', groups: [:development]
 
+# amazon aws
+gem 'aws-sdk'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
