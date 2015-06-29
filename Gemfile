@@ -44,6 +44,9 @@ gem 'dotenv-rails', groups: [:development]
 # amazon aws
 gem 'aws-sdk'
 
+ # stripe for payments
+gem 'stripe'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
