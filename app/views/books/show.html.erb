@@ -11,6 +11,23 @@
       <h4 class="text-right">$<%= @book.price.to_f / 100 %></h4>
     </div>
    
+   <% if current_user %>
+     <%= form_tag buy_path(slug: @book.slug) do %>
+      <form action="" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-amount="<%= @book.price %>"
+          data-name="eStuk"
+          data-description="<%= @book.name %>"
+          data-email="<%= current_user.email %>">
+        </script>
+      </form>
+     <% end %>
+  <% else %>
+    <p>Please Login first to buy</p>
+  <% end %>
+
   </div>
 </div>
  
