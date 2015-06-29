@@ -44,6 +44,8 @@ gem 'dotenv-rails', groups: [:development]
 # amazon aws
 gem 'aws-sdk'
 
+gem 'friendly_id'
+
  # stripe for payments
 gem 'stripe'
 
